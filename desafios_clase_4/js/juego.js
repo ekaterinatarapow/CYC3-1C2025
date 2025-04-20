@@ -1,7 +1,7 @@
 const boton = document.getElementById("jugar");
 const opciones = ["piedra", "papel", "tijera"];
 
-// DESAFÍO 2: Inicializar los contadores
+// DESAFÍO 2: Iniciar los contadores
 let contadorGanadas = 0;
 let contadorPerdidas = 0;
 let contadorEmpatadas = 0;
