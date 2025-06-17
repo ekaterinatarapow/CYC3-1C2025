@@ -17,7 +17,7 @@ export default function Pieza({ valor, onClick, imagen, mostrarImagen }) {
         height: "100px",
         boxSizing: "border-box",
         position: "relative",
-        // Para mostrar la imagen si mostrarImagen es true y no es la pieza vacía
+        // Mostrar la imagen si mostrarImagen es true y no es la pieza vacía
         backgroundImage: !esVacio && mostrarImagen ? `url(${imagen})` : undefined,
         backgroundSize: "300px 300px",
         backgroundPosition: getBackgroundPosition(valor),
@@ -35,7 +35,7 @@ export default function Pieza({ valor, onClick, imagen, mostrarImagen }) {
 
     return (
         <button className="pieza" style={estilo} onClick={onClick} disabled={esVacio}>
-            {/* Para solo mostrar el número si NO estamos en modo vista previa O si es la pieza vacía */}
+            {/* Para solo mostrar el número si NO estamos en modo vista previa o si es la pieza vacía */}
             {!esVacio && !mostrarImagen && (
                 <span
                     className="numero-pieza"

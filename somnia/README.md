@@ -27,5 +27,5 @@ Se utilizará la mecánica clásica de un rompecabezas deslizante:
 -   [React](https://react.dev/)
 -   [Vite](https://vitejs.dev/)
 -   [PNPM](https://pnpm.io/)
-
-! [Logo](./public/vite.svg)
+-   Chat GPT (https://chatgpt.com/)
+-   Claude (https://claude.ai/new)
