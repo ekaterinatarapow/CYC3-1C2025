@@ -89,19 +89,23 @@ h2 {
 }
 
 .slider-carrusel {
-    width: 250px;
-    height: 250px;
-    margin: 0.1rem;
+    width: 200px;
+    height: 200px;
+    margin: 0.5rem auto;
     position: relative;
-    overflow: hidden;
     border-radius: 12px;
+    overflow: hidden;
 }
 
 .img-slider {
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
     opacity: 0;
     animation: aparecer 25s infinite;
     transition: opacity 1s ease-in-out;
@@ -221,19 +225,19 @@ h2 {
 .mensaje {
     text-align: center;
     background-color: #ddd7f2;
-    margin: 1rem auto;
-    padding: 0.2rem;
+    margin: 0.5rem auto;
+    padding: 0.1rem;
     border-radius: 10px;
     width: fit-content;
 }
 
 #pantalla-entre-niveles {
     background-color: #b6add0;
-    padding: 1rem 1rem 2.7rem 1rem;
+    padding: 1rem 1rem 0.7rem 1rem;
 }
 
 #pantalla-entre-niveles .imagen-completa {
-    margin-top: 1rem;
+    margin-top: 0.7rem;
 }
 
 .juego {
@@ -275,19 +279,19 @@ h2 {
     margin: 0 auto 1rem;
     border-radius: 10px;
     border: 2px solid #b6add0;
-    overflow: hidden;
-    display: flex;
     align-items: center;
     justify-content: center;
+    object-fit: cover;
+    object-position: center;
 }
 
 #pantalla-final {
     background: linear-gradient(#b6add0, #ddd7f21a);
-    padding: 1rem 1rem 4.2rem 1rem;
+    padding: 1rem 1rem 4rem 1rem;
 }
 
 #pantalla-final .imagen-completa {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
 }
 
 .img-final {
@@ -295,6 +299,7 @@ h2 {
     height: 100%;
     object-position: center;
     border-radius: 8px;
+    object-position: center;
 }
 
 .mensaje-final {
