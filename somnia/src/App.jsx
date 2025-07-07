@@ -105,7 +105,7 @@ export default function App() {
                 <Hero onStart={manejarComenzar} />
             ) : juegoFinalizado ? (
                 // Pantalla final cuando se completaron todos los rompecabezas
-                <main className="juego">
+                <main className="juego fade-in" id="pantalla-final">
                     <div className="pantalla-final">
                         <div className="imagen-completa">
                             <img src={imagenFinal} alt="Imagen final" className="img-final" />
@@ -117,7 +117,7 @@ export default function App() {
                 </main>
             ) : mostrarResumen ? (
                 // Pantalla de resumen después de completar cada rompecabezas
-                <main className="juego">
+                <main className="juego fade-in" id="pantalla-entre-niveles">
                     <div className="pantalla-final">
                         <div className="imagen-completa">
                             <img src={imagenes[completados]} alt={`Sueño ${completados + 1}`} className="img-final" />
@@ -130,7 +130,7 @@ export default function App() {
                 </main>
             ) : (
                 // Pantalla principal del juego con el rompecabezas activo
-                <main className="juego">
+                <main className="juego fade-in">
                     <Tablero
                         numero={completados + 1}
                         imagen={imagenes[completados]}
